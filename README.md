@@ -41,23 +41,34 @@ Fault Tolerance: Kafka's distributed nature ensures fault tolerance and scalabil
 
 
 1. To start the zookeeper
+
 cd Downloads
+
 cd kafka
+
 bin/zookeeper-server-start.sh config/zookeeper.properties
 
 2. To start the server 
+
 cd Downloads
+
 cd kafka
+
 bin/kafka-server-start.sh config/server.properties
 
 3. To check the kafka topic creation and read
+
    cd Downloads
+
    cd kafka
+
    kafka % bin/kafka-topics.sh --create --topic topic-example --bootstrap-server localhost:9092
 
-4. To write to the topic
+5. To write to the topic
+
 bin/kafka-console-producer.sh --topic topic-example --bootstrap-server localhost:9092
-5. To read from the topic
+6. To read from the topic
+  
    bin/kafka-console-consumer.sh --topic topic-example --from-beginning --bootstrap-server localhost:9092 
 
 
