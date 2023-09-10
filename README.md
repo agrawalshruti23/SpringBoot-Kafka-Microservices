@@ -67,6 +67,7 @@ bin/kafka-server-start.sh config/server.properties
 5. To write to the topic
 
 bin/kafka-console-producer.sh --topic topic-example --bootstrap-server localhost:9092
+
 6. To read from the topic
   
    bin/kafka-console-consumer.sh --topic topic-example --from-beginning --bootstrap-server localhost:9092 
